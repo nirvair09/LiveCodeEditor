@@ -2,35 +2,14 @@
   "name": "live-code-editor",
   "version": "0.1.0",
   "private": true,
+  "dependencies": {
     "express": "^4.17.3",
     "socket.io": "^4.4.1"
   },
   "scripts": {
-    "start:front": "react-scripts start",
-    "start": "npm run build && npm run server:prod",
-    "build": "react-scripts build",
+    "start": "node server.js",
     "server:dev": "nodemon server.js",
-    "server:prod": "node server.js",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "server:prod": "node server.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
