@@ -8,5 +8,5 @@ export const initSocket = () => {
         transports: ['websocket'],
     };
 
-    return io(process.env.REACT_APP_SERVER_URL, options);
+    return io(import.meta.env.VITE_SERVER_URL || 'http://localhost:5000', options);
 };

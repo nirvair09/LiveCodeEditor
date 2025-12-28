@@ -7,7 +7,7 @@ import 'codemirror/addon/edit/closetag';
 import 'codemirror/addon/edit/closebrackets';
 import ACTIONS from '../Actions';
 
-export const Editor = ({ socketRef, roomId, onCodeChange }) => {
+const Editor = ({ socketRef, roomId, onCodeChange }) => {
     const editorRef = useRef(null);
     useEffect(() => {
         async function init() {
@@ -58,3 +58,5 @@ export const Editor = ({ socketRef, roomId, onCodeChange }) => {
     return <textarea id='code' />
 
 };
+
+export default Editor;

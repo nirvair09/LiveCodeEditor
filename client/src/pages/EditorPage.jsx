@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import ACTIONS from '../Actions';
-import Client from '../components/Client';
-import Editor from '../components/Editor';
+import Client from '../components/Client.jsx';
+import Editor from '../components/Editor.jsx';
 import { initSocket } from '../socket';
 import {
     useLocation,
